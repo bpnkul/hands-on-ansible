@@ -1,0 +1,3 @@
+lxc-create -n playbooks -t ubuntu
+lxc-start -n playbooks -d
+ansible-playbook setup-new.yml -i hosts -u ubuntu -k --ask-sudo-pass
